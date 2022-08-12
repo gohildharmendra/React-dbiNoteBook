@@ -1,0 +1,18 @@
+{
+  "name": "dbnotebook-backend",
+  "version": "1.0.0",
+  "description": "dbNoteBook-Best app for dbNoteBook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dbGohil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

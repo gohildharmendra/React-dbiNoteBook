@@ -1,0 +1,24 @@
+#Run
+>npm init
+
+#fill the details
+{"name": "dbnotebook-backend","version": "1.0.0","description": "dbNoteBook-Best app for dbNoteBook","author": "dbGohil","license": "ISC"}
+
+#run command
+>npm i express
+
+#Download mongodb and install it (https://www.mongodb.com/try/download/community)
+# Download Compass and install it(https://www.mongodb.com/try/download/compass)
+
+#create db.js file for db connection
+
+#run command
+>npm install mongoose --save
+
+>npm i -D nodemon (if not working then install globally)
+>npm i -g nodemon
+
+
+
+
+
