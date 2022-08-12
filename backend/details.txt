@@ -25,6 +25,13 @@
 #for fields validation
 >npm install --save express-validator
 
+#for Password encrypt
+>npm i bcryptjs
+
+#for generate token login user
+>npm i jsonwebtoken
+
+
 
 
 
