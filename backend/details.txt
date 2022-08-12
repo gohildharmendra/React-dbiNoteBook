@@ -13,11 +13,17 @@
 #create db.js file for db connection
 
 #run command
+#for save data in mongodb using mongoose
 >npm install mongoose --save
 
+#for auto refresh 
 >npm i -D nodemon (if not working then install globally)
 >npm i -g nodemon
+//run file using nodemon
+> nodemon index.js
 
+#for fields validation
+>npm install --save express-validator
 
 
 
