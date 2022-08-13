@@ -3,7 +3,9 @@ const User = require('../models/User');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
+const JWT_SECRET = "db@iNoteBook"
 //Create user using method:POST "/api/auth/createuser" no login required
 router.post('/createuser',[
     body('name','Enter min:3 char length').isLength({ min: 3 }),
@@ -29,7 +31,13 @@ router.post('/createuser',[
         email: req.body.email,
         password: secPassword,
       })
-      res.json({status:200, msg:'record added successfully',data:user})   
+      const data ={
+          user:{
+              id:user.id
+            }
+        }
+        const authToken = jwt.sign(data, JWT_SECRET); 
+        res.json({status:200, msg:'Record Added Successfully',authToken})  
     }catch(error){
         console.log(error.message);
         res.status(500).send("Some Error Ocurred")
