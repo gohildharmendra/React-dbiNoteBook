@@ -31,7 +31,3 @@
 #for generate token login user
 >npm i jsonwebtoken
 
-
-
-
-
