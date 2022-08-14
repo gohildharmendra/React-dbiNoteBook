@@ -1,0 +1,11 @@
+#create app
+>npx create-react-app dbinotebook
+
+#Add react-router-dom
+>npm i react-router-dom
+
+#Run multiple server
+>npm i concurrently
+
+
+
